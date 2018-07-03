@@ -9,22 +9,22 @@ import pprint
 if 'DISCOURSE_AUTH' in os.environ:
  uauth=os.environ['DISCOURSE_AUTH']
 else:
- print('ERROR: Environment variable DISCOURSE_AUTH not found.'
- print('This is value from https://DOMAIN_NAME/admin/api/keys'
+ print('ERROR: Environment variable DISCOURSE_AUTH not found.')
+ print('This is value from https://DOMAIN_NAME/admin/api/keys')
  exit()
 
 if 'DISCOURSE_ROOT' in os.environ:
  uroot=os.environ['DISCOURSE_ROOT']
 else:
- print('ERROR: Environment variable DISCOURSE_ROOT not found.'
- print('This is the domain name of the discourse site e.g. https://DOMAIN_NAME'
+ print('ERROR: Environment variable DISCOURSE_ROOT not found.')
+ print('This is the domain name of the discourse site e.g. https://DOMAIN_NAME')
  exit()
 
 if 'DISCOURSE_SESS' in os.environ:
  usess=os.environ['DISCOURSE_SESS']
 else:
- print('ERROR: Environment variable DISCOURSE_SESS not found.'
- print('This is an _t session key from a valid https://DOMAIN_NAME session'
+ print('ERROR: Environment variable DISCOURSE_SESS not found.')
+ print('This is an _t session key from a valid https://DOMAIN_NAME session')
  print('The _t session key is a security "feature" for some discourse installs')
  exit()
 
