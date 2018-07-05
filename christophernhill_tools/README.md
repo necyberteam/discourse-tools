@@ -15,6 +15,8 @@ Chris scripts to use Discourse API ( https://docs.discourse.org/ )
    
    - ```get_topics.py```. Python 3 script to list topics and topic ids for topics with a specific tag ```zeta:launch-ready```!
 
+   - ```create_users.py```. Python 3 script to create a new set of user accounts from a list in a file and using Discourse API POST method.
+
  All the Discourse API scripts need environment variables set as listed below. 
 
    -   ```export DISCOURSE_AUTH=??????????????????????????????????????????????```. This variable
