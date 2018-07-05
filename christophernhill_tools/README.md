@@ -10,6 +10,10 @@ Chris scripts to use Discourse API ( https://docs.discourse.org/ )
     the web session.
 
    - ```get_categories.py```. Python 3 script to list categories from a site and their descriptions.
+   
+   - ```get_tags.py```. Python 3 script to list tags from a site.
+   
+   - ```get_topics.py```. Python 3 script to list topics and topic ids for topics with a specific tag ```zeta:launch-ready```!
 
  All the Discourse API scripts need environment variables set as listed below. 
 
