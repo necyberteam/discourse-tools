@@ -29,6 +29,7 @@ else:
  exit()
 
 url_user_specific_base='https://%s/u/%s/emails.json?%s'
+url_user_specific_info_base='https://%s/users/%s.json?%s'
 url_user_list='https://%s/%s?%s'%(uroot,'admin/users/list/active.json',uauth)
 cookies=dict(_t=usess)
 
@@ -40,7 +41,11 @@ for j in r.json():
   url_specific_user=url_user_specific_base%(uroot,j["username"],uauth)
   ru=requests.get(url_specific_user,cookies=cookies)
   jj=ru.json()
+  url_specific_user_info=url_user_specific_info_base%(uroot,j["username"],uauth)
+  rui=requests.get(url_specific_user_info,cookies=cookies)
+  jji=rui.json()
+  un=jji['user']['name']
   if 'email' in jj:
-   print(iu, jj['email'])
+   print(iu, jj['email'],un)
   else:
    print(iu)

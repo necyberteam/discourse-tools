@@ -32,7 +32,7 @@ url_tags_list='https://%s/%s?%s'%(uroot,'tags.json',uauth)
 cookies=dict(_t=usess)
 
 r=requests.get(url_tags_list,cookies=cookies)
-pp = pprint.PrettyPrinter(indent=1)
+# pp = pprint.PrettyPrinter(indent=1)
 # pp.pprint(r.json())
 # exit()
 for t in r.json()['tags']:
